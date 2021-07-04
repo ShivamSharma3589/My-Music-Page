@@ -91,10 +91,7 @@ header{
 /* media query for max width 600px goes here */
 @media (max-width:600px){
     html{
-        font-size: 11px;
-    }
-    body{
-        height:96vh;
+        font-size: 13px;
     }
     #artist{
         margin-bottom: 10px;
@@ -102,6 +99,10 @@ header{
     #controllers i{
         margin: 15px;
         font-size: 5rem;
+    }
+    #playButton{
+        margin:5px;
+        font-size:5.5rem;
     }
     #count{
         font-size: 3.5rem;
