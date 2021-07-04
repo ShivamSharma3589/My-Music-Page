@@ -106,7 +106,6 @@ header{
     }
     #count{
         font-size: 3.5rem;
-        position:fixed;
-        bottom:0;
+        bottom:20px;
     }
 }
