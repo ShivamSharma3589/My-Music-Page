@@ -98,7 +98,7 @@ header{
     }
     #controllers i{
         margin: 15px;
-        font-size: 5rem;
+        font-size: 4rem;
     }
     #playButton{
         margin:5px;
@@ -106,5 +106,7 @@ header{
     }
     #count{
         font-size: 3.5rem;
+        position:fixed;
+        bottom:0;
     }
 }
