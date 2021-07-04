@@ -34,7 +34,7 @@ header{
     top: 10px;
     font-variant: small-caps;
     font-size: 1.5rem;
-    font-family: 'Tourney', cursive;
+    font-family: 'Baloo Thambi 2', cursive;
     animation: header 5s ease-in-out 0 alternate forwards;
     cursor: pointer;
 }
