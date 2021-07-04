@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body style goes here */
+body{
+    background: black url('images/king.jpg') center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    height: 100vh;
+    position: relative;
+}
+/* To declare varible for common colors in page  */
+:root{
+    --color1:rgb(0, 255, 255);
+    --color2:rgb(0, 255, 242);
+    --color3:rgb(67, 164, 255);
+    --color4:rgb(132, 0, 255);
+    --color5:black;
+    --color6:rgb(255, 196, 0);
+}
+/* header style goes here */
+header{
+    color: var(--color6);
+    text-shadow: 0px 0px 10px var(--color1),1px 1px 15px var(--color2),-1px -1px 15px var(--color3),2px 2px 1px black;
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    top: 10px;
+    font-variant: small-caps;
+    font-size: 1.5rem;
+    font-family: 'Tourney', cursive;
+    animation: header 5s ease-in-out 0 alternate forwards;
+    cursor: pointer;
+}
+/* animation for changing colors of header */
+@keyframes header{
+    0%{color: white;}
+    10%{color: rgb(255, 0, 0);}
+    20%{color: rgb(255, 115, 0);}
+    30%{color: rgb(255, 238, 0);}
+    40%{color: rgb(81, 255, 0);}
+    50%{color: rgb(0, 255, 76);}
+    60%{color: rgb(0, 204, 255);}
+    70%{color: rgb(0, 81, 255);}
+    80%{color: rgb(153, 0, 255);}
+    90%{color: rgb(255, 0, 221);}
+    100%{color: rgb(255, 0, 76);}
+}
+/* controllers style goes here */
+#controllers{
+    width: 100%;
+    height: 100vh;
+    backdrop-filter:blur(1px);
+    background-color: rgba(0, 0, 0, 0.548);
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+}
+/* control icons style goes here */
+#controllers i{
+    margin: 7px;
+    cursor: pointer;
+    text-shadow: 0px 0px 10px var(--color1),1px 1px 15px var(--color2),-1px -1px 15px var(--color3),2px 2px 1px black;
+}
+/* hovering for icon in controls goes here */
+#controllers i:hover{
+    color: rgb(148, 148, 148);
+}
+/* on click style for icons in controls goes here */
+#controllers i:active{
+    color: var(--color4);
+    text-shadow: none;
+}
+/* To keep the track of current platying song style goes here */
+#count{
+    position: absolute;
+    bottom: 0;
+    font-size: 1.8rem;
+    text-shadow: 0px 0px 10px var(--color1),1px 1px 15px var(--color2),-1px -1px 15px var(--color3),2px 2px 1px var(--color5);
+    color: var(--color6);
+}
+/* media query for max width 600px goes here */
+@media (max-width:600px){
+    html{
+        font-size: 11px;
+    }
+    #artist{
+        margin-bottom: 10px;
+    }
+    #controllers i{
+        margin: 10px;
+        font-size: 4rem;
+    }
+    #count{
+        font-size: 3.5rem;
+    }
+}

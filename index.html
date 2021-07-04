@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Music page</title>
+</head>
+<!-- body starts here -->
+<body id="body">
+    <!-- header starts -->
+    <header id="header">
+        <!-- To show the artist name and song name  -->
+        <h1 id="artist">King</h1>
+        <h2 id="song">Tu Aake Dekh Le</h2>
+    </header>
+    <!-- controls to set the song -->
+    <div id="controllers">
+        <!-- To play previous song -->
+        <i id="backward" class="fa fa-backward fa-2x"></i>
+        <!-- To play/pause the song -->
+        <i id="playButton" class="fa fa-play-circle fa-3x"></i>
+        <!-- To play next song -->
+        <i id="forward" class="fa fa-forward fa-2x"></i>
+        <p id="count">Loading...</p>
+    </div>
+    <!-- audio tag to play the music in loop -->
+    <audio id="myAudio" loop src="audios/tu.mp3"></audio>
+</body>
+
+</html>
+<!-- including main javascript -->
+<script src="mian.js"></script>
+<!-- including sweetalert link in page -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
