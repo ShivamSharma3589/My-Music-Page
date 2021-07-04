@@ -62,7 +62,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative;
     z-index: 5;
 }
 /* control icons style goes here */
