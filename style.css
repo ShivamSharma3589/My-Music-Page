@@ -11,6 +11,7 @@ body{
     align-items: center;
     color: rgb(255, 255, 255);
     user-select: none;
+    outline:none;
     height: 100vh;
     position: relative;
 }
@@ -92,12 +93,15 @@ header{
     html{
         font-size: 11px;
     }
+    body{
+        height:96vh;
+    }
     #artist{
         margin-bottom: 10px;
     }
     #controllers i{
-        margin: 10px;
-        font-size: 4rem;
+        margin: 15px;
+        font-size: 5rem;
     }
     #count{
         font-size: 3.5rem;
