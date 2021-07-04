@@ -98,10 +98,11 @@ header{
     }
     #controllers i{
         margin: 15px;
-        font-size: 2rem;
+        font-size: 5rem;
     }
-    .fa-play-circle,.fa-pause-circle{
-        font-size:6rem;
+    #playButton{
+        font-size:7rem;
+        margin:20px;
     }
     #count{
         font-size: 3.5rem;
