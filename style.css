@@ -59,7 +59,6 @@ header{
     backdrop-filter:blur(1px);
     background-color: rgba(0, 0, 0, 0.548);
     display: flex;
-    font-size:5rem;
     justify-content: center;
     align-items: center;
     position: relative;
