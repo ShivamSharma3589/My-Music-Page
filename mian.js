@@ -112,13 +112,13 @@ function image() {
 //Play/Pause button
 playButton.onclick = () => {
     if (isplay == false) {
-        playButton.className = 'fa fa-pause-circle fa-3x';
+        playButton.className = 'fa fa-pause-circle ';
         header.style.animationIterationCount ='infinite';
         myAudio.play();
         isplay = true;
     } else {
         header.style.animationIterationCount ='0';
-        playButton.className = 'fa fa-play-circle fa-3x'
+        playButton.className = 'fa fa-play-circle '
         myAudio.pause();
         isplay = false;
     }
@@ -131,7 +131,7 @@ function toggle() {
     header.style.animationIterationCount ='infinite';
     song.innerHTML = lists[index].songName;
     artist.innerHTML = lists[index].artistName;
-    playButton.className = 'fa fa-pause-circle fa-3x';
+    playButton.className = 'fa fa-pause-circle ';
     myAudio.pause();
     isplay = false;
     myAudio.src = lists[index].song;
