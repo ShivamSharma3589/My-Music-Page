@@ -136,7 +136,7 @@ function toggle() {
     isplay = false;
     myAudio.src = lists[index].song;
     myAudio.play();
-    isplay = True;
+    isplay = true;
 }
 //Forward click button
 forward.onclick = () => {
